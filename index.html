@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=250&id=KS3ARUzPXuOj&format=png&color=ffffff">
+
     <title>Portifólio-Web</title>
 </head>
 <body>
-<nav>
+<div class="nav">
     <!-- Seção de navegação-->
     <ul class="nav-list">
-        <li class="nav-item" id="item-inicio">Início</li>
-        <li class="nav-item" id="item-habilidades">Habilidades</li>
-        <li class="nav-item" id="item-projetos">Projetos</li>
-        <li class="nav-item" id="item-sobremim">Sobre mim</li>
+        <a href="#top" class="nav-item" id="item-Inicio">Início</a>
+        <a href="#habilidades" class="nav-item" id="item-Habilidades">Habilidades</a>
+        <a href="#projetos" class="nav-item" id="item-Projetos">Projetos</a>
+        <a href="#sobremim" class="nav-item" id="item-Sobremim">Sobre Mim</a>
 
     </ul>
-</nav>
+</div>
 <div class="main">
 <!-- Seção de Início-->
     <div class ="inicio" id="inicio">
-        <h1 class="inicio-header">Olá, sou Guilherme Severo Barros</h1>
-        <h2 class="inicio-subheader">Desenvolvedor de software Web // Mobile App</h2>
-        <p class="inicio-text">Sou um desenvolvedor que está disposto a experimentar coisas novas e refinar minhas habilidades atuais.
-             Tenho uma paixão pelo processo de construção de aplicações e estou constantemente melhorando minha base de conhecimento no
-              mundo tech. Busco constantemente mais disciplina, não só na área de TI, mas também na minha carreira profissional como um todo.</p>
+        <div class="inicio-image-container">
+            <img class="inicio-image" src="./assets/dev-image.jpg"/>
+        </div>
+        <div class="inicio-text-container">
+            <h1 class="inicio-header">Olá, sou Guilherme Severo Barros</h1>
+            <h2 class="inicio-subheader">Desenvolvedor de software Web e Mobile App</h2>
+            <p class="inicio-text">Sou um desenvolvedor que está disposto a experimentar coisas novas e refinar minhas habilidades atuais.
+                Tenho uma paixão pelo processo de construção de aplicações e estou constantemente melhorando minha base de conhecimento no
+                mundo tech. Busco constantemente mais disciplina, não só na área de TI, mas também na minha carreira profissional como um todo.</p>
+        </div>
     </div>
 <!-- Seção de Habilidades-->
     <div class ="habilidades" id="habilidades">
@@ -33,51 +39,37 @@
         <div class="habilidades-container">
         <div class="habilidades-card">
             <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000"/>
-            <div class="progress-bar">
-                <div class="progress-javascript">75%</div>
-            </div>
+            
             <p class="habilidades-text">Javascript</p>
         </div>
         <div class="habilidades-card">
             <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000"/>
-            <div class="progress-bar">
-                <div class="progress-css">75%</div>
-            </div>
+            
             <p class="habilidades-text">CSS</p>
         </div>
         <div class="habilidades-card">
             <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000"/>
-            <div class="progress-bar">
-                <div class="progress-html">75%</div>
-            </div>
+            
             <p class="habilidades-text">HTML</p>
         </div>
         <div class="habilidades-card">
             <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=anECpXcEIboQ&format=png&color=000000" />
-            <div class="progress-bar">
-                <div class="progress-php">60%</div>
-            </div>
+            
             <p class="habilidades-text">PHP</p>
         </div>
         <div class="habilidades-card">
             <img class="habilidades-image" width="100px" heigth="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Easyphp_logo.svg/250px-Easyphp_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" />
-            <div class="progress-bar">
-                <div class="progress-easyphp">60%</div>
-            </div>
+            
             <p class="habilidades-text">EasyPHP</p>
         </div>
         <div class="habilidades-card">
             <img class="habilidades-image"  src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000" />
-            <div class="progress-bar">
-                <div class="progress-react">70%</div>
-            </div>
+            
             <p class="habilidades-text">React</p>
         </div>
         <div class="habilidades-card">
             <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=XH8DlMsSOmWT&format=png&color=000000" />
-            <div class="progress-bar">
-                <div class="progress-swift">30%</div>
-            </div>
+            
             <p class="habilidades-text">Swift</p>
         </div>
         </div>
@@ -85,37 +77,27 @@
         <div class="habilidades-container">
             <div class="habilidades-card">
                 <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=Y540xYwpkenx&format=png&color=000000" />
-                <div class="progress-bar">
-                    <div class="progress-resolucao">85%</div>
-                </div>
+                
                 <p class="habilidades-text">Resolução de problemas</p>
             </div>
             <div class="habilidades-card">
                 <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=32dd80BEYyNI&format=png&color=000000" />
-                <div class="progress-bar">
-                    <div class="progress-aprendizado">80%</div>
-                </div>
+                
                 <p class="habilidades-text">Aprendizado contínuo</p>
             </div>
             <div class="habilidades-card">
                 <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=BPFfi69JReUf&format=png&color=000000" />
-                <div class="progress-bar">
-                    <div class="progress-comunicacao">50%</div>
-                </div>
+                
                 <p class="habilidades-text">Comunicação</p>
             </div>
             <div class="habilidades-card">
                 <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=HFG5UTj0PxrB&format=png&color=000000" />
-                <div class="progress-bar">
-                    <div class="progress-equipe">70%</div>
-                </div>
+                
                 <p class="habilidades-text">Trabalho em equipe</p>
             </div>
             <div class="habilidades-card">
                 <img class="habilidades-image" src="https://img.icons8.com/?size=100&id=iGqQseIhNdgX&format=png&color=000000" />
-                <div class="progress-bar">
-                    <div class="progress-logico">85%</div>
-                </div>
+                
                 <p class="habilidades-text">Pensamento lógico</p>
             </div>
         </div>
@@ -217,9 +199,6 @@
                 </li>
                 
             </ul>
-        </div>
-        <div class="sobremim-image-container">
-            <img class="sobremim-image" src="./assets/dev-image.jpg"/>
         </div>
     </div>
 

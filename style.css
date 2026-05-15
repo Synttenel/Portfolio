@@ -3,15 +3,29 @@
     font-family: 'Courier New', Courier, monospace;
     color: white;
     transition: all 0.35s ease-out ;
+    scroll-behavior: smooth;
+    
 }
 html{
     margin: 0;
     padding: 0;
+    
 }
 body{
     background-color: #0D0D0D;
 }
 
+
+.nav{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: sticky;
+    top: 10px;
+
+    z-index: 999;
+}
 .nav-list{
     display: flex;
     flex-direction: row;
@@ -19,18 +33,24 @@ body{
     gap: 5px;
     margin: 0;
     padding: 0;
-    
+    backdrop-filter: blur(5px);
     list-style-type: none;
     text-align: center;
     
 }
 .nav-item{
     display: inline-block;
+    text-decoration: none;
     border: 1px solid white;
     padding: 2px;
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
+}
+.nav-item::selection{
+    background-color: white;
+    color: #0D0D0D;
+    font-weight: bolder;
 }
 .nav-item:hover{
     background-color: white;
@@ -48,8 +68,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
-    
+    gap: 5px;
     border: 2px outset white;
     border-radius: 5px;
     min-height: 800px;
@@ -58,23 +79,48 @@ body{
     margin-top: 10px;
     
 }
+.inicio:hover{
+    background-color:rgba(0, 0, 0, 0.962);
+    box-shadow: 0 0 15px white;
+}
+.inicio-image-container{
+    width: 30%;
+    display: flex;
+    margin-top:10px;
+    justify-content: center;
+}
+.inicio-image{
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 999px;
+    user-select: none;
+}
+.inicio-image:hover{
+    box-shadow: 0 0 15px white, 0 0 15px gray;
+    cursor: url("./assets/icons8-cat-64.png"),auto;
+}
+.inicio-text-container{
+    margin: 10px;
+    width: 65%;
+    padding: 5px;
+}
 .inicio-header{
     display: block;
-    font-style:italic;
-    font-size: 50px;
+    
+    font-size: 29px;
     
     margin-bottom: 5px;
     text-indent: 20px;
-    text-align: center;
+   
 }
 .inicio-subheader{
     
     display: block;
-    font-style:italic;
-    font-size: 30px;
+    font-size:20px;
     
     text-indent: 20px;
-    text-align: center;
+    
 }
 .inicio-text{
     
@@ -82,13 +128,14 @@ body{
     text-indent: 20px;
     text-align: justify;
     line-height: 25px;
-    width: 75%;
+    font-size: 18px;
+    
     
 }
 
 .habilidades{
     
-    display: none;
+    display: flex;
     flex-direction: column;
     
     text-align: center;
@@ -98,6 +145,10 @@ body{
     height: 100%;
     width: 75%;
     margin-top: 10px;
+}
+.habilidades:hover{
+    background-color:rgba(0, 0, 0, 0.962);
+    box-shadow: 0 0 15px white;
 }
 .habilidades-container{
     display: flex;
@@ -116,6 +167,13 @@ body{
     align-items: center;
     justify-content: center;
     
+    background-color: rgba(255, 255, 255, 0.062);
+    border-radius: 10px;
+    
+}
+.habilidades-card:hover{
+    box-shadow: 0 0 15px white;
+    background-color: rgba(255, 255, 255, 0.205);
 }
 .habilidades-header{
     display: block;
@@ -127,146 +185,17 @@ body{
     display: block;
     text-align: center;
 }
-.progress-bar{
-    width: 100%;
-    background-color: gray;
-    color:#0D0D0D;
-    text-align: center;
-    border: 2px solid green;
-    border-radius: 10px;
-    display: block;
-}
-.progress-javascript{
-    width: 75%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-css{
-    width: 75%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-html{
-    width: 75%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-php{
-    width: 60%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-easyphp{
-    width: 60%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-react{
-    width: 70%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-swift{
-    width: 30%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-resolucao{
-    width: 85%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-aprendizado{
-    width: 80%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-comunicacao{
-    width: 50%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-equipe{
-    width: 70%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
-.progress-logico{
-    width: 85%;
-    height: 18px;
-    background-color: white;
-    color:#0D0D0D;
-    border-radius: 10px;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-}
 .habilidades-text{
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    user-select: none;
     display: block;
 }
 
 
 .projetos{
     
-    display: none;
+    display: flex;
     flex-direction: column;
     
     
@@ -276,6 +205,10 @@ body{
     height: 100%;
     width: 75%;
     margin-top: 10px;
+}
+.projetos:hover{
+    background-color:rgba(0, 0, 0, 0.962);
+    box-shadow: 0 0 15px white;
 }
 .projetos-info-container{
     display: none;
@@ -390,6 +323,10 @@ body{
     background-color: blueviolet;
     border: 2px solid white;
     border-radius: 5px;
+    user-select: none;
+}
+.projetos-item:hover{
+    box-shadow: 0 0 15px white;
 }
 .projetos-item-click{
     
@@ -425,7 +362,7 @@ body{
 
 .sobremim{
     
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -437,6 +374,10 @@ body{
     width: 75%;
     margin-top: 10px;
     padding: 10px;
+}
+.sobremim:hover{
+    background-color:rgba(0, 0, 0, 0.962);
+    box-shadow: 0 0 15px white;
 }
 .sobremim-text-container{
     margin-top:10px;
@@ -479,6 +420,7 @@ body{
     text-indent: 20px;
     line-height: 30px;
     margin: 15px;
+    font-size: 20px;
     font-weight: lighter;
 }
 .sobremim-text{
@@ -547,17 +489,29 @@ body{
     .nav-list{
         flex-direction: column;
     }
+    .nav{
+        top: 0;
+        display: inline;
+        position: sticky;
+    }
 
     .inicio{
+        flex-direction: column;
         width: 100%;
         height: 100%;
         padding: 10px;
     }
+    .inicio-text-container{
+        width: 100%;
+    }
     .inicio-header{
-        font-size: 35px;
+        font-size: 29px;
     }
     .inicio-subheader{
         font-size: 25px;
+    }
+    .inicio-text{
+        font-size: 16px;
     }
 
     .habilidades{
