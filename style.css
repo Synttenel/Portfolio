@@ -33,7 +33,6 @@ body{
     gap: 5px;
     margin: 0;
     padding: 0;
-    backdrop-filter: blur(5px);
     list-style-type: none;
     text-align: center;
     
@@ -44,6 +43,8 @@ body{
     border: 1px solid white;
     padding: 2px;
     border-radius: 5px;
+    background-color:#0d0d0dab;
+    backdrop-filter: blur(5px);
     cursor: pointer;
     user-select: none;
 }
@@ -97,7 +98,7 @@ body{
     user-select: none;
 }
 .inicio-image:hover{
-    box-shadow: 0 0 15px white, 0 0 15px gray;
+    box-shadow: 0 0 100px white, 0 0 15px gray;
     cursor: url("./assets/icons8-cat-64.png"),auto;
 }
 .inicio-text-container{
@@ -124,11 +125,15 @@ body{
 }
 .inicio-text{
     
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
     text-indent: 20px;
     text-align: justify;
     line-height: 25px;
     font-size: 18px;
+    border-left: 5px solid white;
+    
+    padding-left: 10px;
     
     
 }
@@ -158,6 +163,7 @@ body{
     flex-wrap: wrap;
     gap: 50px;
     margin: 5px;
+    padding: 5px;
 
     
 }
@@ -166,13 +172,13 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    padding: 5px;
     background-color: rgba(255, 255, 255, 0.062);
     border-radius: 10px;
     
 }
 .habilidades-card:hover{
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 50px white;
     background-color: rgba(255, 255, 255, 0.205);
 }
 .habilidades-header{
@@ -186,6 +192,7 @@ body{
     text-align: center;
 }
 .habilidades-text{
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 5px;
     margin-bottom: 5px;
     user-select: none;
@@ -339,8 +346,12 @@ body{
     border: 2px solid white;
     border-radius: 5px;
 }
+.projetos-item-click:hover{
+    box-shadow: 0 0 15px white;
+}
 .projetos-item-info:hover{
     cursor: pointer;
+    box-shadow: 0 0 15px white;
 }
 .projetos-item-image{
     width: 25px;
@@ -348,7 +359,7 @@ body{
 
 }
 .projetos-text{
-    
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
     text-indent: 20px;
     text-align: justify;
@@ -415,6 +426,7 @@ body{
 }
 .sobremim-subheader{
     
+    font-family: Arial, Helvetica, sans-serif;
     display: block;
     text-align: justify;
     text-indent: 20px;
@@ -422,6 +434,9 @@ body{
     margin: 15px;
     font-size: 20px;
     font-weight: lighter;
+    border-left: 5px solid white;
+    
+    padding-left: 10px;
 }
 .sobremim-text{
     
@@ -488,6 +503,7 @@ body{
 @media only screen and (max-width: 800px){
     .nav-list{
         flex-direction: column;
+        backdrop-filter: blur(5px);
     }
     .nav{
         top: 0;
